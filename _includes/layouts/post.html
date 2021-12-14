@@ -1,0 +1,16 @@
+---
+layout: layouts/main.html
+---
+
+<article>
+    <div class="info">
+        {% for tag in tags %}
+            <a href="/tags/{{tag}}">{{tag}}</a> |
+        {% endfor %}
+        {{ date | date: "%d %b %Y" }}
+    </div>
+    <h2>
+        {{ title }}
+    </h2>
+    {{ content }}
+</article>

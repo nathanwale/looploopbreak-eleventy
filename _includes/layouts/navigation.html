@@ -1,0 +1,9 @@
+<nav>
+    <ul>
+        {% for section in site_sections %}
+        <li>
+            <a href="/{{ section | downcase | url_encode }}/">{{ section }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</nav>
