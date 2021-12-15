@@ -13,6 +13,7 @@ site_sections:
         <title>
             {{site_title}}: {{ title }}
         </title>
+        <link rel="stylesheet" type="text/css" href="{{ '/style/main.css' | url }}">
     </head>
     <body>
         {% include "layouts/header.html" %}
@@ -21,10 +22,7 @@ site_sections:
         <main>
             {{ content }}
         </main>
-        Tags: 
-        {% for tag in collections.site_tags %}
-            {{ tag }} | 
-        {% endfor %}
+        {% include "layouts/site-tags.html" %}
         {% include "layouts/footer.html" %}
     </body>
 </html>
