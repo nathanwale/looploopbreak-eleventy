@@ -1,0 +1,38 @@
+body {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    gap: 10px;
+}
+
+.title {
+    grid-row: 1;
+    grid-column: 2; 
+}
+
+nav {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: right;
+}
+
+.socials {
+    grid-row: 2;
+    grid-column: 3; 
+}
+
+main {
+    grid-row: 2 / 4;
+    grid-column: 2; 
+}
+
+.tags {
+    grid-row: 3;
+    grid-column: 3;
+}
+
+footer {
+    grid-row: 4;
+    grid-column: 2; 
+}

@@ -1,5 +1,7 @@
 module.exports = (eleventyConfig) => {
+
   eleventyConfig.addPassthroughCopy("style");
+  
   eleventyConfig.addCollection(
       "site_tags",
       (collection) => {
