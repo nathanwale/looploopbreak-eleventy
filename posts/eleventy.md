@@ -67,7 +67,7 @@ There are about three different ways to specify a list in YAML, but I managed to
 Eleventy does allow you to attach metadata in [JSON or plain JS objects](https://www.11ty.dev/docs/data-frontmatter/). You can also [configure TOML](https://www.11ty.dev/docs/data-frontmatter-customize/#example-using-toml-for-front-matter-parsing) as the front-matter data format.
 
 ### Silent failure
-Something common to most of these templating languages is silent failure. If a tag's incorrect, you'll get an error in the console. But if you misspell a variable you won't be told, things just won't render. So you won't know if there is nothing in the list-like object you're iterating through with `{% for ... in ... %}`, or if you've just misspelt the name of the list.
+Something common to most of these templating languages is silent failure. If a tag's incorrect, you'll get an error in the console. But if you misspell a variable you won't be told, things just won't render. So you won't know if there is nothing in the list-like object you're iterating through with {% raw %}`{% for ... in ... %}`{% endraw %}, or if you've just misspelt the name of the list.
 
 I wonder if these tools could use a type of console where you can inspect the environment that a page is being loaded in. You could then poke around while your developing and see what data is available to each page and correct things that are missing. It might also aid discovery of features.
 

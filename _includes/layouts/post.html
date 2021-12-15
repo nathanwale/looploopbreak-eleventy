@@ -1,16 +1,15 @@
 ---
-layout: layouts/main.html
+layout: "layouts/main.html"
 ---
 
 <article>
     <div class="info">
-        {% for tag in tags %}
-            <a href="/tags/{{tag}}">{{tag}}</a> |
-        {% endfor %}
+        {%- for tag in tags -%}
+            {%- if tag != "post" -%}
+            <a class="tag" href="/tags/{{tag}}">{{tag}}</a><span class="separator"> | </span>
+            {%- endif -%}
+        {%- endfor -%}
         {{ date | date: "%d %b %Y" }}
     </div>
-    <h2>
-        {{ title }}
-    </h2>
     {{ content }}
 </article>
