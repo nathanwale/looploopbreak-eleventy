@@ -3,8 +3,8 @@ title: Eleventy
 date: 2021-12-15
 tags: 
     - eleventy
+    - site-generation
 ---
-# Eleventy
 When I first set out to build this site, I looked at a bunch of options before deciding on [Eleventy](https://www.11ty.dev/).
 
 ## Site Generators and Javascript

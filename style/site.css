@@ -1,9 +1,113 @@
+/*
+** Body
+*/
+
+body {
+    background-color: var(--tone-dark);
+    font: 14px sans-serif;
+}
+
+
+/*
+** Separator for non-styled versions 
+*/
+
 .separator {
     display: none;
 }
 
+/* 
+** Nameplate
+*/
+h1.title {
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0;
+    margin: 50px 0 -10px 0;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+h1.title a {
+    text-decoration: none;
+    color: var(--accent)
+}
+
+/* 
+** Tags
+*/
+
 .tags a {
     text-decoration: none;
-    border: 1px solid #eee;
-    
+    background-color: var(--tone-mid);
+    padding: 0.25em 0.5em;
+    border-radius: 0.5em;
+    color: var(--tone-dark);
+}
+
+.tags h2 {
+    color: white;
+    text-transform: uppercase;
+    border-bottom: 1px solid gray;
+    font-size: 0.8em;
+    margin: 0;
+    padding-bottom: 0.4em;
+    margin-bottom: 1em;
+}
+
+/* 
+** Nav
+*/
+
+nav, div.socials {
+    margin-top: 100px;
+}
+
+nav {
+    font-size: 3em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+}
+
+nav a {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: right;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: white;
+    background-color: rgb(124, 34, 124);
+}
+
+/* 
+** Socials
+*/
+
+div.socials {
+    color: white;
+}
+
+div.socials h2 {
+    display: none;
+}
+
+div.socials ul {
+    list-style: none;
+    padding: 0;
+    line-height: 1.5em;
+}
+
+div.socials a {
+    color: var(--secondary);
+}
+
+div.info {
+    float: right
+}
+
+div.info div.tags a {
+
 }
