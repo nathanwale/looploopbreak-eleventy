@@ -1,7 +1,8 @@
 module.exports = (eleventyConfig) => {
 
-  eleventyConfig.addPassthroughCopy("style");
-  
+  eleventyConfig.addPassthroughCopy("style/");
+  eleventyConfig.addWatchTarget("style/");
+
   eleventyConfig.addCollection(
       "site_tags",
       (collection) => {
