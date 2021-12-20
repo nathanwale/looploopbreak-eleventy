@@ -1,5 +1,6 @@
 :root {
     --accent: violet;
+    --primary-dark: rgb(148, 41, 148);
     --accent-tint: rgba(238, 130, 238, 0.25);
     --secondary: rgb(130, 238, 139);
     --secondary-tint: rgba(130, 238, 139, 0.25);

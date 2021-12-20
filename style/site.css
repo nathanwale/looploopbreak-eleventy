@@ -4,6 +4,7 @@
 
 body {
     background-color: var(--tone-dark);
+    background-image: url("/images/site-background.png");
     font: 14px sans-serif;
 }
 
@@ -21,7 +22,7 @@ body {
 */
 h1.title {
     font-size: 50px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Bungee Outline', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 0;
     margin: 50px 0 -10px 0;
     line-height: 1;
@@ -31,6 +32,15 @@ h1.title {
 h1.title a {
     text-decoration: none;
     color: var(--accent)
+}
+
+/* 
+** Main area 
+*/
+
+main {
+    background-color: white;
+    padding: 40px;
 }
 
 /* 
@@ -73,21 +83,31 @@ nav ul {
 }
 
 nav a {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Exo 2', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
     text-align: right;
     text-decoration: none;
+    text-transform: lowercase;
     display: block;
     padding: 5px;
-    color: white;
-    background-color: rgb(124, 34, 124);
+    color: var(--secondary);
+    /* background-color: rgb(124, 34, 124); */
+}
+
+nav a::after {
+    color: var(--tone-dark-mid);
+    /* content: " » "; */
+    /* font-size: 0.8em; */
 }
 
 /* 
 ** Socials
 */
 
-div.socials {
+div.socials,
+div.tags {
     color: white;
+    font-family: 'Exo 2', sans-serif;
 }
 
 div.socials h2 {
@@ -104,10 +124,7 @@ div.socials a {
     color: var(--secondary);
 }
 
-div.info {
-    float: right
-}
 
-div.info div.tags a {
-
+footer {
+    color: var(--tone-light);
 }
