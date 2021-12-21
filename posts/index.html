@@ -9,4 +9,4 @@ eleventyExcludeFromCollections: true
 <h2>
     Posts
 </h2> 
-{% include "post-list.html" %}
+{% render "post-list.html", posts: collections.post %}

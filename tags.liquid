@@ -1,0 +1,11 @@
+---
+layout: "layouts/main.html"
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+permalink: /tags/{{ tag }}/
+---
+<h1>Tagged “{{ tag }}”</h1>
+
+{% render "post-list.html", posts: collections[ tag ] %}
