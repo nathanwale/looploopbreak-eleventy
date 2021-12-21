@@ -8,6 +8,16 @@ body {
     font: 14px sans-serif;
 }
 
+/* 
+** Side section borders
+*/
+nav,
+.bio {
+    background-color: rgba(0, 0, 0, 0.25);
+    border: solid gray;
+    border-width: 1px 0;
+}
+
 
 /*
 ** Separator for non-styled versions 
@@ -49,32 +59,31 @@ main {
 
 .tags a {
     text-decoration: none;
+    display: inline-block;
     background-color: var(--tone-mid);
     padding: 0.25em 0.5em;
     border-radius: 0.5em;
     color: var(--tone-dark);
+    margin-bottom: 0.5em;
 }
 
+.socials h2,
 .tags h2 {
     color: white;
     text-transform: uppercase;
-    border-bottom: 1px solid gray;
     font-size: 0.8em;
-    margin: 0;
+    margin: 0 0 1em 0;
     padding-bottom: 0.4em;
-    margin-bottom: 1em;
 }
 
 /* 
 ** Nav
 */
 
-nav, div.socials {
-    margin-top: 100px;
-}
 
 nav {
     font-size: 3em;
+    width: 100%;
 }
 
 nav ul {
@@ -101,17 +110,24 @@ nav a::after {
 }
 
 /* 
-** Socials
+** bio
 */
 
-div.socials,
-div.tags {
+div.bio,
+div.tags,
+div.socials {
     color: white;
     font-family: 'Exo 2', sans-serif;
 }
 
-div.socials h2 {
-    display: none;
+div.tags {
+    text-align: right;
+}
+
+div.bio p {
+    font-size: 1.5em;
+    max-width: 10em;
+    color: var(--tone-light);
 }
 
 div.socials ul {
@@ -120,7 +136,8 @@ div.socials ul {
     line-height: 1.5em;
 }
 
-div.socials a {
+div.socials a,
+div.bio a {
     color: var(--secondary);
 }
 
