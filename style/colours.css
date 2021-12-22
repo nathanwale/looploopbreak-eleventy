@@ -1,11 +1,14 @@
 :root {
-    --accent: violet;
-    --primary-dark: rgb(148, 41, 148);
-    --accent-tint: rgba(238, 130, 238, 0.25);
+    --primary: violet;
+    --primary-mid-dark: rgb(148, 41, 148);
+    --primary-dark: rgba(238, 130, 238, 0.25);
     --secondary: rgb(130, 238, 139);
     --secondary-tint: rgba(130, 238, 139, 0.25);
+    --article-text: #222;
     --tone-dark: #333;
     --tone-dark-mid: #555;
     --tone-mid: #aaa;
     --tone-light: #ccc;
+    --tone-extra-light: #eee;
+    --tone-extra-extra-light: #fafafa; /* there may be a better name for this */
 }

@@ -7,7 +7,7 @@ article {
     font-weight: regular;
     line-height: 1.5;
     font-family: 'Glegoo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #222;
+    color: var(--article-text);
 }
 
 article p {
@@ -33,7 +33,7 @@ article .header .date {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2em;
     line-height: 0.9;
-    color: var(--primary-dark);
+    color: var(--primary-mid-dark);
     text-transform: uppercase;
 }
 
@@ -52,19 +52,19 @@ article .tags a {
 }
 
 
-article h1 {
+main h1 {
     font-family: 'Exo 2', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3em;
     font-weight: thin;
     line-height: 1;
     margin: 0;
-    background-color: var(--accent);
+    background-color: var(--primary);
     background-image: url("/images/article-header-background.png");
     padding: 0.75em 0 0.1em 40px;
     grid-column: 1;
     grid-row: 1 / 3;
     color: white;
-    text-shadow: 2px 2px 0 rgb(148, 41, 148);;
+    text-shadow: 2px 2px 0 var(--primary-mid-dark);
 }
 
 article h2 {
@@ -74,17 +74,17 @@ article h2 {
     text-align: center;
     padding: 0.25em;
     margin: 1em 0 0 0;
-    background-color: #eee;
+    background-color: var(--tone-extra-light);
 }
 
 article h2::before {
     content: "❯❯ ";
-    color: var(--accent);
+    color: var(--primary);
 }
 
 article h2::after {
     content: " ❮❮";
-    color: var(--accent);
+    color: var(--primary);
 }
 
 article h3 {

@@ -42,7 +42,7 @@ h1.title {
 
 h1.title a {
     text-decoration: none;
-    color: var(--accent)
+    color: var(--primary)
 }
 
 /* 
@@ -51,7 +51,7 @@ h1.title a {
 
 main {
     background-color: white;
-    border-top: 10px solid var(--accent);
+    border-top: 10px solid var(--primary);
     padding: 40px;
 }
 
@@ -167,7 +167,7 @@ div.posts .date {
     font-style: normal;
     text-align: center;
     padding: 0.5em;
-    background-color: var(--primary-dark);
+    background-color: var(--primary-mid-dark);
     color: white;
 }
 
@@ -177,7 +177,7 @@ div.posts p.summary {
     grid-column: 2;
     margin: 0;
     padding: 0.5em;
-    background-color: #fafafa;
+    background-color: var(--tone-extra-extra-light);
 }
 
 div.posts h2 {
@@ -190,15 +190,16 @@ div.posts h2 {
     line-height: 1;
     text-align: center;
     padding: 0.25em;
-    background-color: #eee;
+    background-color: var(--tone-extra-light);
 }
 
 div.posts h2::before {
     content: "❯❯ ";
-    color: var(--accent);
+    color: var(--primary);
 }
 
 div.posts h2::after {
     content: " ❮❮";
-    color: var(--accent);
+    color: var(--primary);
 }
+
