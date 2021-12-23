@@ -3,9 +3,18 @@ title: Eleventy
 date: 2021-12-15
 tags: 
     - eleventy
+<<<<<<< Updated upstream
 ---
 # Eleventy
 When I first set out to build this site, I looked at a bunch of options before deciding on [Eleventy](https://www.11ty.dev/).
+=======
+    - site-generation
+summary: My experience using the static site generator <a href="https://www.11ty.dev/">Eleventy</a> to make this blog.
+---
+
+
+When first building this site, I looked at a bunch of options before deciding on [Eleventy](https://www.11ty.dev/).
+>>>>>>> Stashed changes
 
 ## Site Generators and Javascript
 Eleventy<sup>1</sup> is a static site generator written in Javascript. That worried me a bit, because I have old set biases about the language. A lot of those biases originated from doing server-side dev with JScript (not quite Javascript) on ASP (before .NET) and interfacing with Access (yeah, that one). You know what? We never had a problem with Access, but maybe we were tempting fate a bit.
