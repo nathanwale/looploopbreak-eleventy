@@ -1,0 +1,21 @@
+@import "layout.css";
+@import "site.css";
+@import "article.css";
+@import "colours.css";
+
+/* Fonts */
+@font-face {
+    font-family: 'Bungee Outline';
+    src: url(/fonts/BungeeOutline-Regular.ttf);
+} 
+
+@font-face {
+    font-family: 'Exo 2';
+    src: url(/fonts/Exo2-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Glegoo';
+    src: url(/fonts/Glegoo-Regular.ttf);
+}
+

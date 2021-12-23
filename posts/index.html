@@ -3,10 +3,7 @@ layout: "layouts/main.html"
 title: Posts
 eleventyExcludeFromCollections: true
 ---
-<p>
-    <strong>Loop Loop Break</strong> is the blog of Nathan Wale.
-</p>
-<h2>
+<h1>
     Posts
-</h2> 
-{% include "post-list.html" %}
+</h1> 
+{% render "post-list.html", posts: collections.post %}

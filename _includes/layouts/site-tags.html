@@ -1,0 +1,7 @@
+<div class="tags">
+    <h2>Site Tags</h2>
+    {% for tag in collections.site_tags %}
+        <span class='separator'> | </span>
+        <a href="/tags/{{ tag | url}}/">{{ tag }}</a>
+    {% endfor %}
+</div>

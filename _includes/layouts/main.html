@@ -1,10 +1,10 @@
 ---
 site_title: Loop Loop Break
 site_sections:
-    - About
     - Posts
-    - Contact
     - Demos
+    - About
+    - Contact
 ---
 
 <!DOCTYPE html>
@@ -13,18 +13,18 @@ site_sections:
         <title>
             {{site_title}}: {{ title }}
         </title>
+        <link rel="stylesheet" type="text/css" href="{{ '/style/main.css' | url }}">
+        <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     </head>
     <body>
         {% include "layouts/header.html" %}
         {% include "layouts/navigation.html" %}
+        {% include "layouts/bio.html" %}
         {% include "layouts/socials.html" %}
         <main>
             {{ content }}
         </main>
-        Tags: 
-        {% for tag in collections.site_tags %}
-            {{ tag }} | 
-        {% endfor %}
+        {% include "layouts/site-tags.html" %}
         {% include "layouts/footer.html" %}
     </body>
 </html>

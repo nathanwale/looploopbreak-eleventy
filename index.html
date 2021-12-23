@@ -2,10 +2,7 @@
 layout: "layouts/main.html"
 title: Index
 ---
-<p>
-    <strong>Loop Loop Break</strong> is the blog of Nathan Wale.
-</p>
-<h2>
-    Posts
-</h2> 
-{% include "post-list.html" %}
+<h1>
+    Recent Posts
+</h1> 
+{% render "post-list.html", posts: collections.post %}

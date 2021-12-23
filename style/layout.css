@@ -1,0 +1,43 @@
+body {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 50em 1fr;
+    grid-template-rows: auto 100px auto auto 1fr auto;
+    gap: 10px;
+}
+
+.title {
+    grid-row: 1;
+    grid-column: 2; 
+}
+
+nav {
+    grid-row: 3;
+    grid-column: 1;
+    justify-self: right;
+}
+
+.bio {
+    grid-row: 3;
+    grid-column: 3; 
+}
+
+.socials {
+    grid-row: 4;
+    grid-column: 3; 
+}
+
+main {
+    grid-row: 2 / 6;
+    grid-column: 2; 
+}
+
+.tags {
+    grid-row: 4;
+    grid-column: 1;
+}
+
+footer {
+    grid-row: 6;
+    grid-column: 2; 
+}
