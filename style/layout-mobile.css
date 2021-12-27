@@ -1,0 +1,46 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 
+        "info  info"
+        "title  title"
+        "nav    nav"
+        "main   main"
+        "footer footer"
+        "tags   tags";
+}
+
+.title {
+    grid-area: title;
+}
+
+nav {
+    grid-area: nav;
+}
+
+nav ul {
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+}
+
+.bio {
+    grid-area: info;
+}
+
+.socials {
+    display: none;
+}
+
+main {
+    grid-area: main
+}
+
+.tags {
+    grid-area: tags;
+}
+
+footer {
+    grid-area: footer;
+}

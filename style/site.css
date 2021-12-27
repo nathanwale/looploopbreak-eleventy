@@ -5,20 +5,7 @@
 body {
     background-color: var(--tone-dark);
     background-image: url("/images/site-background.png");
-    font: 14px sans-serif;
 }
-
-/* 
-** Side section borders
-*/
-
-nav,
-.bio {
-    background-color: rgba(0, 0, 0, 0.25);
-    border: solid gray;
-    border-width: 1px 0;
-}
-
 
 /*
 ** Separator for non-styled versions 
@@ -32,10 +19,8 @@ nav,
 ** Nameplate
 */
 h1.title {
-    font-size: 50px;
     font-family: 'Bungee Outline', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     padding: 0;
-    margin: 50px 0 -10px 0;
     line-height: 1;
     text-transform: uppercase;
     text-shadow: 1px 1px 0 var(--secondary);
@@ -54,6 +39,10 @@ main {
     background-color: white;
     border-top: 10px solid var(--primary);
     padding: 40px;
+    font-weight: regular;
+    line-height: 1.5;
+    font-family: 'Glegoo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--article-text);
 }
 
 /* 
@@ -86,11 +75,8 @@ main {
 
 
 nav {
-    font-size: 3em;
     width: 100%;
     line-height: 1;
-    margin-right: -10px;
-    padding-right: 10px;
 }
 
 nav ul {
@@ -141,7 +127,6 @@ div.bio {
 
 div.bio p {
     font-size: 1.5em;
-    max-width: 10em;
     color: var(--tone-light);
 }
 
@@ -152,7 +137,6 @@ div.socials h2 {
 div.socials ul {
     list-style: none;
     padding: 0;
-    margin: 1em 0 0 0;
     line-height: 1.5em;
     font-size: 1.2em;
 }

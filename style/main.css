@@ -1,4 +1,15 @@
-@import "layout.css";
+/* 
+** Responsive layout
+*/
+/* Mobile */
+@import "layout-mobile.css" screen and (orientation: portrait);
+@import "site-mobile.css" screen and (orientation: portrait);
+
+/* Desktop */
+@import "layout-desktop.css" screen and (orientation: landscape);
+@import "site-desktop.css" screen and (orientation: landscape);
+
+/* All */
 @import "site.css";
 @import "article.css";
 @import "colours.css";

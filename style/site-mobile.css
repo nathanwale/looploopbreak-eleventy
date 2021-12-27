@@ -1,0 +1,81 @@
+body {
+    font: 20px sans-serif;
+}
+
+main {
+    font-size: 2em;
+}
+
+.bio {
+    margin: 0.25em 0;
+    font-size: 2.5em;
+    font-family: 'Glegoo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.bio p {
+    max-width: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+.bio::after {
+    /* padding-left: 0.25em; */
+    font-style: italic;
+    content: "Web design, programming and all that";
+    color: var(--tone-mid);
+}
+
+h1.title {
+    font-size: 15vw;
+    margin: 0;
+}
+
+.socials ul {
+    margin: 0.5em;
+}
+
+nav {
+    font-size: 6vw;
+}
+
+nav li {
+    padding: 0 0 0.5em 0;
+}
+
+article div.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr;
+    gap: 5px;
+}
+
+article .header h1 {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 2em;
+}
+
+article .header .date {
+    grid-column: 2;
+    font-size: 2em !important;
+}
+
+article .header .tags {
+    grid-row: 2;
+    grid-column: 1;
+    padding: 0.25em 40px;
+    font-size: 1em !important;
+}
+
+.tags {
+    font-size: 2em !important;
+}
+
+article .tags a {
+    padding: 0.1em 0.5em !important;
+}
+
+footer {
+    font-size: 1.5em;
+}
