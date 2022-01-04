@@ -8,5 +8,5 @@ permalink: /tags/{{ tag }}/
 ---
 
 <h1>Posts tagged “{{ tag }}”</h1>
-
-{% render "post-list.html", posts: collections[ tag ] %}
+{% assign posts = collections[ tag ] | reverse %}
+{% render "post-list.html", posts: posts %}

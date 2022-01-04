@@ -8,4 +8,5 @@ title: Index
 <h1>
     Recent Posts
 </h1> 
-{% render "post-list.html", posts: collections.post %}
+{% assign posts = collections.post | reverse %}
+{% render "post-list.html", posts: posts %}

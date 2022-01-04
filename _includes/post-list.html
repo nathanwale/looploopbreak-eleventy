@@ -1,5 +1,6 @@
 <div class="posts">
     {% for post in posts %}
+    <div class="post">
         <h2>
             <a href="{{ post.url }}">{{ post.data.title }}</a>
         </h2>
@@ -9,5 +10,6 @@
         <p class="summary">
             {{ post.data.summary }}
         </p>
+    </div>
     {% endfor %}
 </div>

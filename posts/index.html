@@ -6,4 +6,5 @@ eleventyExcludeFromCollections: true
 <h1>
     Posts
 </h1> 
-{% render "post-list.html", posts: collections.post %}
+{% assign posts = collections.post | reverse %}
+{% render "post-list.html", posts: posts %}
