@@ -75,6 +75,7 @@ main {
 
 
 nav {
+    
     width: 100%;
     line-height: 1;
 }
@@ -159,14 +160,15 @@ footer {
 /* 
 ** Post list
 */
-div.posts {
+div.post {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 5em auto;
     gap: 0;
+    margin-top: 1px;
 }
 
-div.posts .date {
+div.post .date {
     grid-row: 1 / 3;
     grid-column: 1;
     line-height: 1;
@@ -179,7 +181,7 @@ div.posts .date {
     color: white;
 }
 
-div.posts p.summary {
+div.post p.summary {
     font-family: 'Glegoo';
     grid-row: 2;
     grid-column: 2;
@@ -188,7 +190,11 @@ div.posts p.summary {
     background-color: var(--tone-extra-extra-light);
 }
 
-div.posts h2 {
+div.post:nth-child(even) .date {
+    background-color: var(--primary-mid);
+}
+
+div.post h2 {
     font-family: 'Exo 2', sans-serif;
     font-weight: bold;
     font-size: 2em;
@@ -201,12 +207,12 @@ div.posts h2 {
     background-color: var(--tone-extra-light);
 }
 
-div.posts h2::before {
+div.post h2::before {
     content: "❯❯ ";
     color: var(--primary);
 }
 
-div.posts h2::after {
+div.post h2::after {
     content: " ❮❮";
     color: var(--primary);
 }
