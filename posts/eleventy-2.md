@@ -1,5 +1,5 @@
 ---
-title: Eleventy, part 2
+title: Eleventy, part&nbsp;2
 date: 2022-01-04
 tags: 
     - eleventy
