@@ -43,28 +43,15 @@ nav li {
     padding: 0 0 0.5em 0;
 }
 
-article div.header {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto 1fr;
-    gap: 5px;
-}
-
 article .header h1 {
-    grid-column: 1;
-    grid-row: 1;
     font-size: 2em;
 }
 
 article .header .date {
-    grid-column: 2;
-    font-size: 2em !important;
+    /* font-size: 1.5em !important; */
 }
 
 article .header .tags {
-    grid-row: 2;
-    grid-column: 1;
-    padding: 0.25em 40px;
     font-size: 1em !important;
 }
 

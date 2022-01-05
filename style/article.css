@@ -16,6 +16,33 @@ article div.header {
     margin-bottom: 0.5em;
 }
 
+article div.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr auto;
+    gap: 5px;
+}
+
+article .header h1 {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: stretch;
+    align-items: end;
+    display: grid;
+}
+
+article .header .date {
+    grid-column: 2;
+    grid-row: 1;
+    word-spacing: 10em;
+}
+
+article .header .tags {
+    grid-row: 2;
+    grid-column: 1;
+    justify-self: right;
+}
+
 article .header .date {
     font-family: "Exo 2", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2em;
@@ -46,7 +73,7 @@ main h1 {
     margin: 0;
     background-color: var(--primary);
     background-image: url("/images/article-header-background.png");
-    padding: 0.75em 0 0.1em 40px;
+    padding: 0.0 1em 0.1em 40px;
     color: white;
     text-shadow: 2px 2px 0 var(--primary-mid-dark);
 }
@@ -100,4 +127,9 @@ pre {
 p.intro {
     font-size: 1.5em;
     font-style: italic
+}
+
+article a {
+    color: var(--secondary-mid-dark);
+    font-weight: bold;
 }
