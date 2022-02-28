@@ -26,7 +26,6 @@ article div.header {
 article .header h1 {
     grid-column: 1;
     grid-row: 1;
-    align-self: stretch;
     align-items: end;
     display: grid;
 }
