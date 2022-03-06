@@ -39,7 +39,7 @@ Tags are implemented by ~~abusing~~ taking advantage of Eleventy's [pagination s
 
 ### An example of paging
 From [the docs](https://www.11ty.dev/docs/pagination/#aliasing-to-a-different-variable):
-{%raw%}```
+{%raw%}```yaml
 ---
 pagination:  
     data: testdata  
@@ -68,7 +68,7 @@ The `collections` object collects all content of your static site and organises 
 If you assign `pagination.data` as `collections`, then you'll be "paging" through all your content, and each "page" will be a tag. `size: 1` because there is only one tag per page. `alias: tag` makes referencing the tag more convenient.
 
 Here's an example that's used on this site:
-{%raw%}```
+{%raw%}```liquid
 ---
 layout: "layouts/main.html"
 pagination:
