@@ -88,6 +88,8 @@ shadow.appendChild(template.content)
 
 From my experiments, this only works when attached to a shadow DOM, not a DOM that's already in the document tree. `notice.appendChild(template.content)`  will not fill out the slots.
 
+[Code on codepen.io](https://codepen.io/nwale/pen/bGYyeXe?editors=1011)
+
 ## Applications
 `<template>` and `<slot>` are designed for use in [custom web components](https://developer.mozilla.org/en-US/docs/Web/Web_Components), and you won't find many examples that don't use them in that context.
 
