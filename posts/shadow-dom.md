@@ -1,8 +1,9 @@
 ---
 title: The Shadow DOM
-date: 2022-03-06
+date: 2022-03-07
 tags: 
     - javascript
+    - web components
 summary: Why and what-for of the Shadow DOM
 ---
 ~~The Shadow DOM is a dark apparition of the regular DOM, symbolising all its darkest desires and the potential for evil even in the noblest hero...~~
