@@ -2,13 +2,13 @@
 ** Main content, articles etc.
 */
 
-article p {
+/* article p {
     margin: 0;
 }
 
 article p+p {
     text-indent: 1em;
-}
+} */
 
 
 article div.header {
@@ -99,6 +99,7 @@ article h2::after {
 
 article h3 {
     margin: 2em 0 0 0;
+    border-bottom: 1px solid var(--tone-light);
 }
 
 hr {
@@ -115,6 +116,14 @@ code {
 code {
     font-size: 0.8em;
     border-radius: 3px;
+}
+
+h2 code {
+    background-color: inherit;
+    color: inherit;
+    padding: inherit;
+    font-size: inherit;
+    border-radius: inherit;
 }
 
 pre {
@@ -135,4 +144,11 @@ p.intro {
 article a {
     color: var(--secondary-mid-dark);
     font-weight: bold;
+}
+
+article blockquote {
+    border-left: 0.5em solid var(--primary);
+    margin-left: 0.5em;
+    padding-left: 0.5em;
+    background-color: var(--tone-extra-light);
 }
