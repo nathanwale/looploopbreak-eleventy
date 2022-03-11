@@ -131,16 +131,16 @@ This produces the same result as `<auto-link>` above. This version of `AutoLink`
 ## Lifecycles of Custom Elements
 There are [a few methods](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks) that are fired at different times during the lifecycle of an element:
 
-**`connectedCallback`** 
+**`connectedCallback`** \
 The element has been added to a document.
 
-**`disconnectedCallback`**
+**`disconnectedCallback`** \
 The element has been removed from a document.
 
-**`adoptedCallback`** 
+**`adoptedCallback`** \
 The element has been moved to a new document.
 
-**`attributeChangedCallback`**
+**`attributeChangedCallback`** \
 An attribute of the element has changed. This only affects elements specified by `observedAttributes` as a static get method of the custom element.
 
 MDN has [an example](https://github.com/mdn/web-components-examples/blob/master/life-cycle-callbacks/main.js) on using these callbacks.
