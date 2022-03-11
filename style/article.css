@@ -2,13 +2,6 @@
 ** Main content, articles etc.
 */
 
-/* article p {
-    margin: 0;
-}
-
-article p+p {
-    text-indent: 1em;
-} */
 
 
 article div.header {
@@ -119,7 +112,7 @@ code {
 }
 
 h2 code {
-    background-color: inherit;
+    background-color: transparent;
     color: inherit;
     padding: inherit;
     font-size: inherit;
