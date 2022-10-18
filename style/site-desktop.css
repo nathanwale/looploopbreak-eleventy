@@ -160,7 +160,7 @@ article .summary {
 }
 
 /*
-** Entrypoints
+** Article list
 */
 
 div.post {
@@ -210,6 +210,11 @@ main.entrypoint h1 {
     border-bottom: 2px solid var(--dark);
 }
 
+
+/*
+** Site tags
+*/
+
 main.entrypoint .site-tags {
     text-align: left;
     border-left: 2px solid var(--primary);
@@ -233,4 +238,62 @@ main.entrypoint .site-tags a {
     text-decoration: none;
     color: var(--accent);
     font-weight: bold;
+}
+
+
+/*
+** Portfolio
+*/
+div.demo {
+    background-color: var(--dark);
+    color: white;
+    padding: 10px;
+    border-radius: 0.25em;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "title"
+        "description"
+        "date";
+}
+
+div.demo img {
+    border-radius: 0.25em;
+    max-height: 15em;
+    margin: 1em 0;
+}
+
+div.demo p {
+    margin: 0;
+}
+
+div.demo a.thumbnail {
+    display: block;
+    text-align: center;
+}
+
+div.demo h2 a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+div.demo h2 {
+    margin: 0;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.25em;
+    border-bottom: 1px solid var(--primary);
+}
+
+
+div.demo a {
+    color: var(--accent);
+}
+
+div.demo p.links {
+    text-align: right;
+}
+
+div.demo p.links a {
+    font-weight: bold;
+    text-decoration: none;
 }
