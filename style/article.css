@@ -2,106 +2,34 @@
 ** Main content, articles etc.
 */
 
-
-
-article div.header {
-    margin: 0 -40px;
-    margin-bottom: 0.5em;
-}
-
-article div.header {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr auto;
-    gap: 5px;
-}
-
-article .header h1 {
-    grid-column: 1;
-    grid-row: 1;
-    align-items: end;
-    display: grid;
-}
-
-article .header .date {
-    grid-column: 2;
-    grid-row: 1;
-    word-spacing: 10em;
-}
-
-article .header .tags {
-    grid-row: 2;
-    grid-column: 1;
-    justify-self: right;
-}
-
-article .header .date {
-    font-family: "Exo 2", Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2em;
-    line-height: 0.9;
-    color: var(--primary-mid-dark);
-    text-transform: uppercase;
-}
-
-article .header .tags {
-    font-size: 0.8em;
-    text-align: left;
-}
-
-article .tags a {
-    background-color: var(--tone-dark);
-    color: white;
-    margin: 2px;
-    display: inline-block;
-    padding: 1px 5px;
-}
-
-
 main h1 {
     font-family: 'Exo 2', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 3em;
-    font-weight: thin;
-    line-height: 1;
-    margin: 0;
-    background-color: var(--primary);
-    background-image: url("/images/article-header-background.png");
-    padding: 0.0 1em 0.1em 40px;
-    color: white;
-    text-shadow: 2px 2px 0 var(--primary-mid-dark);
+    color: var(--primary);
 }
 
 article h2 {
     font-family: 'Exo 2', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1;
-    text-align: center;
-    padding: 0.25em;
-    margin: 1em 0 0 0;
-    background-color: var(--tone-extra-light);
+    margin: 1em 0 0.25em 0;
+    color: var(--dark);
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.25em;
 }
 
-article h2::before {
-    content: "❯❯ ";
-    color: var(--primary);
-}
-
-article h2::after {
-    content: " ❮❮";
-    color: var(--primary);
-}
 
 article h3 {
     margin: 2em 0 0 0;
-    border-bottom: 1px solid var(--tone-light);
 }
 
 hr {
-    border: 1px dotted var(--tone-mid);
+    border: 1px dotted var(--dark);
 }
 
 pre, 
 code {
-    background-color: var(--tone-dark-mid);
+    background-color: var(--dark);
     color: white;
     padding: 0.1em 0.5em;
 }
@@ -122,7 +50,8 @@ h2 code {
 pre {
     overflow: scroll;
     border-radius: 5px;
-    border: 5px solid var(--tone-dark-mid);
+    margin: 1em 0 !important; 
+    margin-left: -0.5em !important;
 }
 
 pre code {
@@ -135,7 +64,7 @@ p.intro {
 }
 
 article a {
-    color: var(--secondary-mid-dark);
+    color: var(--accent);
     font-weight: bold;
 }
 
@@ -143,5 +72,18 @@ article blockquote {
     border-left: 0.5em solid var(--primary);
     margin-left: 0.5em;
     padding-left: 0.5em;
-    background-color: var(--tone-extra-light);
+}
+
+article p {
+    margin: 0;
+}
+
+p + p {
+    text-indent: 1em;
+}
+
+
+article p,
+article h2 {
+    margin-right: 10vi;
 }
