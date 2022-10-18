@@ -1,7 +1,12 @@
-<div class="tags">
+<div class="site-tags">
     <h2>Site Tags</h2>
-    {% for tag in collections.site_tags %}
-        <span class='separator'> | </span>
-        <a href="/tags/{{ tag | url}}/">{{ tag }}</a>
-    {% endfor %}
+    <ul>
+        {%- for tag in collections.site_tags -%}
+            {%- if tag != "post" -%}
+            <li>
+                <a class="tag" href="/tags/{{tag}}">{{tag}}</a>
+            </li>
+            {%- endif -%}
+        {%- endfor -%}
+    </ul>
 </div>
