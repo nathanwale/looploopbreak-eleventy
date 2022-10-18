@@ -1,5 +1,5 @@
 ---
-layout: "layouts/main.html"
+layout: "layouts/about.html"
 ---
 # About Loop Loop Break
 
