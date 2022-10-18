@@ -1,0 +1,34 @@
+/* 
+** Nameplate
+*/
+h1.title {
+    font-family: 'Bungee Outline', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    line-height: 1;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 0 var(--accent);
+}
+
+h1.title a {
+    text-decoration: none;
+    color: var(--primary)
+}
+
+
+/* 
+** Main area 
+*/
+
+main {
+    background-color: white;
+    font-weight: normal;
+    line-height: 1.5;
+    font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header a {
+    text-decoration: none;
+}
