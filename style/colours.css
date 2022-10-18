@@ -1,18 +1,5 @@
 :root {
-    --primary: violet;
-    --primary-mid: rgb(190, 74, 190);
-    --primary-mid-dark: rgb(148, 41, 148);
-    --primary-dark: rgba(238, 130, 238, 0.25);
-    --secondary: rgb(130, 238, 139);
-    --secondary-mid: rgb(86, 190, 94);
-    --secondary-mid-dark: rgb(46, 148, 55);
-    --secondary-tint: rgba(130, 238, 139, 0.25);
-    --article-text: #222;
-    --tone-dark: #333;
-    --tone-dark-mid: #555;
-    --tone-mid-dark: #888;
-    --tone-mid: #aaa;
-    --tone-light: #ccc;
-    --tone-extra-light: #eee;
-    --tone-extra-extra-light: #fafafa; /* there may be a better name for this */
+    --primary: #72BEFF;
+    --accent: #FF6400;
+    --dark: #444;
 }
