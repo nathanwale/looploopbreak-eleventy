@@ -5,8 +5,12 @@ pagination:
   size: 1
   alias: tag
 permalink: /tags/{{ tag }}/
+title: Articles tagged "{{ tag }}"
 ---
 
-<h1>Posts tagged “{{ tag }}”</h1>
-{% assign posts = collections[ tag ] | reverse %}
-{% render "post-list.html", posts: posts %}
+<main class='entrypoint'>
+    <h1>Articles tagged “{{ tag }}”</h1>
+    {% assign posts = collections[ tag ] | reverse %}
+    {% render "post-list.html", posts: posts %}
+    {% include "layouts/site-tags.html" %}
+</main>

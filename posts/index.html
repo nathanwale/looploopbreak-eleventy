@@ -1,10 +1,13 @@
 ---
 layout: "layouts/main.html"
-title: Posts
+title: Articles
 eleventyExcludeFromCollections: true
 ---
-<h1>
-    Posts
-</h1> 
-{% assign posts = collections.post | reverse %}
-{% render "post-list.html", posts: posts %}
+<main class="entrypoint">
+    <h1>
+        Articles
+    </h1> 
+    {% assign posts = collections.post | reverse %}
+    {% render "post-list.html", posts: posts %}
+    {% include "layouts/site-tags.html" %}
+</main>
