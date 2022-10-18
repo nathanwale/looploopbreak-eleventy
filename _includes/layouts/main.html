@@ -1,10 +1,9 @@
 ---
 site_title: Loop Loop Break
 site_sections:
-    - Posts
-    - Demos
-    - About
-    - Contact
+    - [Articles, posts]
+    - [Portfolio, demos]
+    - [About, about]
 ---
 
 <!DOCTYPE html>
@@ -18,14 +17,15 @@ site_sections:
         <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     </head>
     <body>
-        {% include "layouts/header.html" %}
-        {% include "layouts/navigation.html" %}
-        {% include "layouts/bio.html" %}
-        {% include "layouts/socials.html" %}
-        <main>
-            {{ content }}
-        </main>
-        {% include "layouts/site-tags.html" %}
-        {% include "layouts/footer.html" %}
+        <header>
+            {% include "layouts/header.html" %}
+            {% include "layouts/navigation.html" %}
+            {% include "layouts/bio.html" %}
+            {% include "layouts/socials.html" %}
+        </header>
+        {{ content }}
+        <footer>
+            {% include "layouts/footer.html" %}
+        </footer>
     </body>
 </html>

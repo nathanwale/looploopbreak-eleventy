@@ -2,7 +2,7 @@
     <ul>
         {% for section in site_sections %}
         <li>
-            <a href="/{{ section | downcase | url_encode }}/">{{ section }}</a>
+            <a href="/{{ section[1] | downcase | url_encode }}/">{{ section[0] }}</a>
         </li>
         {% endfor %}
     </ul>
