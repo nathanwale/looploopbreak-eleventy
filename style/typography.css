@@ -25,10 +25,12 @@ main {
     font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-header {
+header,
+footer {
     font-family: 'Roboto Slab', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-header a {
+header a,
+footer a {
     text-decoration: none;
 }
