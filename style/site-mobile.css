@@ -1,68 +1,371 @@
 body {
-    font: 20px sans-serif;
+    font-size: 30px;
 }
 
-main {
-    font-size: 2em;
-}
 
-.bio {
-    margin: 0.25em 0;
-    font-size: 2.5em;
-    font-family: 'Glegoo', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+/*
+** Header
+*/
 
-.bio p {
-    max-width: none;
-    padding: 0;
-    margin: 0;
-    display: none;
-}
-
-.bio::after {
-    /* padding-left: 0.25em; */
-    font-style: italic;
-    content: "Web design, programming and all that";
-    color: var(--tone-mid);
+header {
+    align-items: end;
+    padding: 2em 1em 1em 1em;
+    background-image: url("/images/site-background-diagonals.png");
+    background-size: 64px;
+    border-bottom: 20px solid var(--primary);
 }
 
 h1.title {
-    font-size: 15vw;
+    font-size: 4em;
     margin: 0;
 }
 
-.socials ul {
-    margin: 0.5em;
-}
-
-nav {
-    font-size: 6vw;
-}
-
-nav li {
-    padding: 0 0 0.5em 0;
-}
-
-article .header h1 {
+nav a {
+    font-weight: bold;
     font-size: 2em;
+    color: var(--primary) !important;
+    text-transform: lowercase;
 }
 
-article .header .date {
-    /* font-size: 1.5em !important; */
+nav a::before {
+    content: "» ";
+    color: white;
 }
 
-article .header .tags {
-    font-size: 1em !important;
+.bio {
+    margin: 0;
+    padding: 0.5em 0;
+    font-size: 1.2em;
+    text-align: left;
+    border-bottom: 2px solid var(--primary);
 }
 
-.tags {
-    font-size: 2em !important;
+.bio p {
+    display: none;
 }
 
-article .tags a {
-    padding: 0.1em 0.5em !important;
+.bio::after {   
+    content: "Web design, development and technology";
 }
+
+
+.socials ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+.socials h2 {
+    display: none;
+}
+
+
+/*
+** Footer
+*/
 
 footer {
+    margin-top: 3em;
+    padding-top: 1em;
+    border-top: 5px solid var(--primary);
+    background-image: url("/images/site-background-diagonals.png");
+    background-size: 64px;
+    font-size: 1.2em;
+    line-height: 1.2;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer .tags,
+footer .contacts {
+    border-left: 2px solid var(--primary);
+    padding-left: 0.5em;
+    padding-bottom: 2em;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav a,
+footer h2 {
+    font-size: 1em;
+    margin: 0;
+}
+
+footer nav,
+footer .copyright {
+    text-align: right;
+    padding-right: 0.5em;
+    padding-bottom: 2em;
+}
+
+
+/*
+** Article
+*/
+
+article {
+    padding: 0.5em;
+}
+
+article h1 {
+    margin: 0;
+    margin-top: 1em;
+}
+
+article ul.article-tags {
+    list-style: none;
+    text-align: left;
+    border-top: 2px solid var(--dark);
+    padding: 0.5em;
+    margin: 0;
+}
+
+article ul.article-tags li {
+    display: inline;
+}
+
+article .article-tags a {
+    text-decoration: none;
+
+}
+
+article .article-tags a::after {
+    content: " /";
+    font-weight: normal;
+    color: var(--dark);
+}
+
+article .article-tags li:last-child a::after {
+    content: "";
+}
+
+article .date {
+    color: var(--dark);
+    font-weight: bold;
     font-size: 1.5em;
+    text-align: center;
+    border-top: 2px solid var(--dark);
+}
+
+article .site-tags {
+    border-top: 2px solid var(--primary);
+    padding-top: 0.5em;
+    margin-top: 2em;
+}
+
+article .site-tags ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+article .site-tags li {
+    display: inline;
+}
+
+article .site-tags a {
+    text-decoration: none;
+    word-break: keep-all;
+}
+
+article .site-tags h2 {
+    margin: 0;
+    font-size: 1em;
+    border: none;
+}
+
+article .site-tags a::after {
+    content: " /";
+    font-weight: normal;
+    color: var(--dark);
+}
+
+article .site-tags li:last-child a::after {
+    content: "";
+}
+
+article .summary {
+    margin: 0;
+    margin-bottom: 1em;
+    background-color: var(--dark);
+    color: white;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: right;
+    padding: 0.5em 1em;
+    line-height: 1.2;
+}
+
+/*
+** Article list
+*/
+
+div.post {
+    background-color: var(--dark);
+    background-image: url("/images/site-background-diagonals.png");
+    background-size: 64px;
+    color: white;
+    padding: 1em;
+    border-radius: 0.25em;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "title"
+        "description"
+        "date";
+    margin: 0 1em;
+    margin-bottom: 2em;
+}
+
+div.post h2 a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+div.post h2 {
+    grid-area: title;
+    margin: 0;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.25em;
+    border-bottom: 1px solid var(--primary);
+}
+
+div.post .date {
+    grid-area: date;
+    text-align: right;
+    align-self: end;
+}
+
+div.post .summary {
+    grid-area: description;
+    margin: 0;
+}
+
+div.post .summary a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main.entrypoint h1 {
+    text-align: center;
+    margin: 1em 0 0.5em 0;
+    line-height: 1;
+}
+
+
+/*
+** Site tags
+*/
+
+main.entrypoint .site-tags {
+    text-align: left;
+    border-top: 2px solid var(--primary);
+    padding: 0.5em 1em;
+}
+
+main.entrypoint .site-tags ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+main.entrypoint .site-tags li {
+    display: inline;
+}
+
+main.entrypoint .site-tags h2 {
+    text-align: left;
+    margin: 0;
+    font-size: 1em;
+    border: none;
+}
+
+main.entrypoint .site-tags a {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: bold;
+    word-break: keep-all;
+}
+
+main.entrypoint .site-tags a::after {
+    content: " /";
+    font-weight: normal;
+    color: var(--dark);
+}
+
+main.entrypoint .site-tags li:last-child a::after {
+    content: "";
+}
+
+
+/*
+** Portfolio
+*/
+div.demo {
+    background-color: var(--dark);
+    background-image: url("/images/site-background-diagonals.png");
+    background-size: 64px;
+    color: white;
+    padding: 1em;
+    border-radius: 0.25em;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "title"
+        "description"
+        "date";
+    margin: 0 1em;
+    margin-bottom: 2em;
+}
+
+div.demo img {
+    border-radius: 0.25em;
+    max-height: 15em;
+    max-width: 95%;
+    margin: 1em 0;
+}
+
+div.demo p {
+    margin: 0;
+}
+
+div.demo a.thumbnail {
+    display: block;
+    text-align: center;
+}
+
+div.demo h2 a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+div.demo h2 {
+    margin: 0;
+    padding-bottom: 0.25em;
+    margin-bottom: 0.25em;
+    border-bottom: 1px solid var(--primary);
+}
+
+
+div.demo a {
+    color: var(--accent);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div.demo p.links {
+    text-align: right;
+}
+
+div.demo p.links a {
+    font-weight: bold;
+    text-decoration: none;
 }
