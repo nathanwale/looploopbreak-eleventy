@@ -19,6 +19,25 @@ header {
     gap: 10px;
 }
 
+.title {
+    grid-row: 1;
+    grid-column: 2 / 5; 
+}
+
+nav {
+    grid-row: 1;
+    grid-column: 5 / 7;
+}
+
+.bio {
+    grid-row: 1;
+    grid-column: 7 / 9; 
+}
+
+.socials {
+    grid-row: 1;
+    grid-column: 9 / 11 
+}
 
 /*
 ** Footer
@@ -45,27 +64,6 @@ footer .contacts {
 
 footer .site-tags {
     grid-column: 8 / 11;
-}
-
-.title {
-    grid-row: 1;
-    grid-column: 2 / 5; 
-}
-
-nav {
-    grid-row: 1;
-    grid-column: 5 / 7;
-    justify-self: right;
-}
-
-.bio {
-    grid-row: 1;
-    grid-column: 7 / 9; 
-}
-
-.socials {
-    grid-row: 1;
-    grid-column: 9 / 11 
 }
 
 
