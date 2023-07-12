@@ -87,3 +87,19 @@ article p,
 article h2 {
     margin-right: 10vi;
 }
+
+article table {
+    text-align: left;
+    border-collapse: collapse;
+    margin: 1em;
+}
+
+article table th,
+article table td {
+    border: 1px solid lightgray;
+    padding: 0.25em 0.5em;
+}
+
+article table th {
+    background-color: lightgray;
+}
