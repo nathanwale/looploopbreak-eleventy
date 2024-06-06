@@ -5,10 +5,12 @@ module.exports = (eleventyConfig) => {
   eleventyConfig.addPassthroughCopy("style/");
   eleventyConfig.addPassthroughCopy("images/");
   eleventyConfig.addPassthroughCopy("fonts/");
+  eleventyConfig.addPassthroughCopy("pdfs/");
   
   eleventyConfig.addWatchTarget("style/");
   eleventyConfig.addWatchTarget("images/");
   eleventyConfig.addWatchTarget("fonts/");
+  eleventyConfig.addPassthroughCopy("pdfs/");
 
   eleventyConfig.addCollection(
       "site_tags",
